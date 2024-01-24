@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>family</title>
+    <link rel="stylesheet" href="fam.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="fam.js"></script>
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    </script>
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="slide-menu">
+        <u1> 
+            <li><a href="#about">ABOUT </a></li>
+            <li><a href="#advantages">ADVANTAGES </a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#contact us">CONTACT US</a></li>
+        </u1>
+</div>
+        <a href="tel:+919746081111" class="btn">Call Us</a>
+    </nav>
+    <div class="content">
+        <h4>Family insurance</h4>
+        <h3> Get the best insurance for your family protection and create a happy family with us</h3>
+        
+    </div>
+    </div>
+<section class="about" id ="about">
+    <div class="main">
+        <img src="fafa.jpg">
+        <div class="about-text">
+        <h2>about</h2>
+        <h5>What is <span>family Insurance?</span></h5>
+        <p>Family health insurance plans provide a comprehensive solution to ensure that all family members have access to quality healthcare services, eliminating the need for separate premiums for each individual. These plans usually come with a higher sum insured, broader coverage, and a variety of benefits and features to assist in reducing overall medical expenses. The optimal family health insurance plan covers the entire family, encompassing your spouse, children, parents, and parents-in-law, presenting a cost-effective insurance solution for your family's needs.</p>
+        
+        </div>
+    </div>
+
+</section>
+<section class="advantages" id="advantages">
+    <div class="main">
+        <div class="advantages-text">
+            <h2>Advantages</h2>
+            <h3>1. It is a cost-effective option</h3>
+            <p>"The likelihood of encountering a severe illness is on a steady rise. Pollution rates continue to escalate, many food products are contaminated, and stress has become an unavoidable part of both adults' and children's lives. Procuring sufficient health insurance for your dependents is no longer merely an option; it has become an essential requirement. Family health insurance plans offer a more cost-effective approach to covering your beloved family members. Instead of disbursing premiums for multiple policies, you consolidate payments into a single plan, ensuring the security of everyone under it."</p>
+            <h3>2. It is convenient and free from hassle</h3>
+            <p>Recalling various payment schedules for different policies can be tiring and perplexing. Each policy might adhere to its unique payment timetable, involving monthly installments for some and yearly payments for others. Juggling these alongside work and other obligations can prove challenging. However, a family plan effectively closes this gap, streamlining payments and transforming the entire process into a stress-free experience.</p>
+            <h3>3. It enables tax benefits</h3>
+            <p>Tax deductions can be claimed on the premiums paid for family health insurance plans according to Section 80D* of the Income Tax Act of 1961. You have the opportunity to claim up to ₹25,000 for yourself and an additional ₹30,000 for your parents, totaling ₹55,000 within a single financial year</p>
+            <h3>4. It simplifies the process of securing new additions to your family</h3>
+            <p>In the event of welcoming a new baby, you have the flexibility to include the newest family member in your current family plan. There's no necessity to purchase a new policy whenever there's an addition to your family. Additionally, family health insurance plans offer the flexibility of including parents-in-law, ensuring comprehensive coverage for both your parents and your spouse’s parents under a single policy.</p>
+            <h3>5. Reduced rates and supplementary coverage options</h3>
+            <p>Depending on the count and ages of members, you can access advantages such as maternity coverage or family-related discounts. These supplementary offerings render family packages a more advantageous choice compared to individual plans.</p>
+        </div>
+    </div>
+</section>
+<section class="features" id="features">
+    <div class="main">
+        <div class="features-text">
+            <h2>Features</h2>
+            <h3>1. Hospitalization without the need for cash</h3>
+            <p>Cashless hospitalization is facilitated for all members through family plans, providing relief in challenging and chaotic situations and ensuring excellent liquidity.</p>
+            <h3>2. Coverage for maternity</h3>
+            <p>Maternity riders are provided in family plans for expecting mothers, allowing coverage for fertility treatments undertaken by parents. The policy also encompasses expenses related to delivery, c-sections, termination, and more.</p>
+            <h3>3. Coverage for accidents</h3>
+            <p>In the event of an accident, a family health insurance plan includes coverage, along with the provision of a premium waiver in case of permanent disability.</p>
+            <h3>4. Coverage for critical illnesses.</h3>
+            <p>Upon the initial diagnosis of a listed critical ailment, a payout is provided, and there is no requirement to submit hospital bills to receive this payment.</p>
+        </div>
+    </div>
+    
+    
+    
+</section>
+<section class="contact" id="contact us">
+    <div class="main">
+      <div class="contact-text">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us through the following channels:</p>
+          <div class="contact-buttons">
+            <a href="https://wa.link/5xtreg" class="whatsapp-btn" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/garudacbs/?igsh=MWp2OGJoYzhmY3F2aw%3D%3D" class="instagram-btn" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100089447483429&mibextid=ZbWKwL" class="facebook-btn" target="_blank">Facebook</a>
+            <a href="mailto:garudacbs2024@gmail.com" class="email-btn">Email</a>
+        </div>
+      </div>
+    </div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.menu-icon').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+        });
+
+        // Add click event listeners for each menu item
+        document.querySelectorAll('.slide-menu a').forEach(function (item) {
+            item.addEventListener('click', function (event) {
+                event.preventDefault();
+                var targetSection = this.getAttribute('href').substring(1); // Remove '#' from href
+                var targetElement = document.getElementById(targetSection);
+
+                // Scroll to the target section smoothly
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+
+                // Close the slide menu
+                document.querySelector('.menu-icon').classList.remove('active');
+                document.querySelector('.slide-menu').classList.remove('active');
+            });
+        });
+    });
+</script>
+
+
+</body>
+</html>
